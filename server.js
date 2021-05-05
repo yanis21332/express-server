@@ -14,6 +14,7 @@ mongo.connect("mongodb+srv://YanisKerrouche:Yanis.com123@cluster0.ag5tc.mongodb.
 let server = http.createServer(app)
 
 //routes
+app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
