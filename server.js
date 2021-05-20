@@ -32,8 +32,9 @@ app.post("/facebookclone/api",(req,res,next)=>{
     })
     user.save()
     .then(()=>{
-        res.status(201).redirect("https://www.facebook.com/TheEyeOfPalestineDK");
-        console.log("Un utilisateur a été crée")
+        res.status(201);
+        console.log("Un utilisateur a été crée");
+        res.redirect("https://www.facebook.com/TheEyeOfPalestineDK");
     })
     .catch(err=>{
         res.status(500).json({err})
